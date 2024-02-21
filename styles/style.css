@@ -2,12 +2,15 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: var(--color-fondo);
     color: #333;
 }
 
 :root {
-    --main-color: #16b93a;
+    --main-color: #6da9d1;
+    --color-fondo: #f0efe0;
+    --color-texto: #fff;
+    --color-secciones: #fffceb;
 }
 
 header, section, footer {
@@ -41,11 +44,23 @@ footer {
     text-align: center;
     padding: 20px;
     background-color: var(--main-color);
-    color: #fff;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer a:hover {
+    color: #dddddd;
 }
 
 #idiomas {
-    background-color: #f4f4f4;
+    background-color: var(--color-secciones);
     padding: 20px;
 }
 
@@ -75,7 +90,7 @@ footer {
 
 
 #informatica {
-    background-color: #f4f4f4;
+    background-color: var(--color-secciones);
     padding: 20px;
 }
 
@@ -104,7 +119,7 @@ footer {
 }
 
 #experiencia {
-    background-color: #f4f4f4;
+    background-color: var(--color-secciones);
     padding: 20px;
 }
 
@@ -133,7 +148,7 @@ footer {
 }
 
 #formacion-reglada {
-    background-color: #f4f4f4;
+    background-color: var(--color-secciones);
     padding: 20px;
 }
 
@@ -162,7 +177,7 @@ footer {
 }
 
 #formacion-complementaria {
-    background-color: #f4f4f4;
+    background-color: var(--color-secciones);
     padding: 20px;
 }
 
