@@ -10,9 +10,13 @@ body {
     --main-color: #6da9d1;
     --color-fondo: #f0efe0;
     --color-secciones: #fffceb;
-    --color-sub-seccion: #ffffff;
-    --color-descripcion: #333;
-    --color-titulos: #333;
+    --color-sub-seccion: #fff;
+    --color-descripcion: #5b5b5b;
+    --color-titulos: #222;
+    --color-enlaces: #000000;
+    --color-enlaces-hover: #666;
+    --color-contacto: #333;
+    --color-borde: #000;
 }
 
 header, section, footer {
@@ -41,10 +45,10 @@ h3 {
 
 p {
     color: var(--color-descripcion);
+    padding-right: 20px;
 }
 
 section {
-    background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -63,11 +67,15 @@ footer {
 
 footer a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--color-enlaces);
 }
 
 footer a:hover {
-    color: #dddddd;
+    color: var(--color-enlaces-hover);
+}
+
+footer p {
+    color: var(--color-contacto);
 }
 
 #idiomas {
@@ -253,14 +261,28 @@ cite {
     font-weight: bold;
 }
 
-.tarea p a {
-    text-decoration: none;
-    color: #ffffff;
+.tarea ol {
+    color: var(--color-titulos);
 }
 
-.tarea p a:hover {
-    color: #dddddd;
+.tarea img {
+    max-width: 100%;
+    height: auto;
 }
+
+.repo {
+    color: var(--color-titulos);
+}
+
+.repo a {
+    text-decoration: underline;
+    color: var(--color-enlaces);
+}
+
+.repo a:hover {
+    color: var(--color-enlaces-hover);
+}
+
 
 @media (prefers-color-scheme: dark) {
     
@@ -271,6 +293,9 @@ cite {
         --color-sub-seccion: #586173;
         --color-descripcion: #C4C4C4;
         --color-titulos: #E5E5E5;
+        --color-enlaces: #fff;
+        --color-enlaces-hover: #ddd;
         --color-borde: #fff;
+        --color-contacto: #c7c7c7;
     }
 }
