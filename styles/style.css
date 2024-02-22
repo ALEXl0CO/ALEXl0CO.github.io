@@ -221,6 +221,47 @@ cite {
     color: var(--color-descripcion);
 }
 
+
+#tareas-realizadas {
+    background-color: var(--color-secciones);
+    padding: 20px;
+}
+
+.tareas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.tarea {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-sub-seccion);
+    padding: 20px;
+    border: 1px solid var(--color-borde);
+    border-radius: 8px;
+    width: 900px;
+    text-align: left;
+}
+
+.titulo-proyecto {
+    text-decoration: underline;
+}
+
+.tarea {
+    font-weight: bold;
+}
+
+.tarea p a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.tarea p a:hover {
+    color: #dddddd;
+}
+
 @media (prefers-color-scheme: dark) {
     
     :root {
