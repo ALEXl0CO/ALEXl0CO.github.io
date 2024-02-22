@@ -216,6 +216,11 @@ footer a:hover {
     margin-bottom: 10px;
 }
 
+cite {
+    font-size: 16px;
+    color: var(--color-descripcion);
+}
+
 @media (prefers-color-scheme: dark) {
     
     :root {
